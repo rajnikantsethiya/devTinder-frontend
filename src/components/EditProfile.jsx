@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import UserCard from "./userCard";
 import { addUser } from "../store/userSlice";
-import Toast from "./toast";
+import Toast from "./Toast";
 import api from "../utils/axiosConfig";
 const EditProfile = () => {
   const dispatch = useDispatch();

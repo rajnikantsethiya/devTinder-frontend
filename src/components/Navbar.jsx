@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import Toast from "./toast";
+import Toast from "./Toast";
 import { removeUser } from "../store/userSlice";
 import api from "../utils/axiosConfig";
 import { setRequests } from "../store/requestsSlice";

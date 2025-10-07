@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { addUser } from "../store/userSlice";
 import { useDispatch } from "react-redux";
-import Toast from "./toast";
+import Toast from "./Toast";
 import api from "../utils/axiosConfig";
 
 const Login = () => {

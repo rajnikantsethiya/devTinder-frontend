@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setFeed } from "../store/feedSlice";
 import UserCard from "./userCard";
-import Toast from "./toast";
+import Toast from "./Toast";
 import api from "../utils/axiosConfig";
 
 const Feed = () => {
