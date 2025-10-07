@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import UserCard from "./userCard";
+import UserCard from "./UserCard";
 import { addUser } from "../store/userSlice";
 import Toast from "./Toast";
 import api from "../utils/axiosConfig";

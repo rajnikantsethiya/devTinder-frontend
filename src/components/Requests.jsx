@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import UserCard from "./userCard";
+import UserCard from "./UserCard";
 
 const Requests = () => {
   const { requests } = useSelector((store) => store.requests);
