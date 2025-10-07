@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import { BASE_URL } from "../utils/constants";
-import { Toast } from "./Toast";
+import Toast from "./Toast";
 import { useDispatch } from "react-redux";
 import { removeUserFromFeed } from "../store/feedSlice";
 import api from "../utils/axiosConfig";
