@@ -11,9 +11,6 @@ const api = axios.create({
 api.interceptors.response.use((response) => response,
     (error) => {
         if (error.response && error.response.status === 401) {
-            // setTimeout(() => {
-            //     window.location.href = "/login";
-            // }, 2000);
             window.location.href = "/login";
         };
     });
