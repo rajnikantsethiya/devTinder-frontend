@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from "react";
-import { BASE_URL } from "../utils/constants";
 import Toast from "./Toast";
 import { useDispatch } from "react-redux";
 import { removeUserFromFeed } from "../store/feedSlice";
@@ -14,7 +13,7 @@ const UserCard = ({ user, request, isFeed, isRequests }) => {
   const handleFeedAction = async (e) => {
     try {
       const res = await api.post(
-        `${BASE_URL}/connection/send/${e.target.value}/${user._id}`,
+        `/connection/send/${e.target.value}/${user._id}`,
         {},
         { withCredentials: true }
       );
@@ -41,7 +40,7 @@ const UserCard = ({ user, request, isFeed, isRequests }) => {
   const handleRequestAction = async (e) => {
     try {
       const res = await api.post(
-        `${BASE_URL}/connection/review/${e.target.value}/${request._id}`,
+        `/connection/review/${e.target.value}/${request._id}`,
         {},
         { withCredentials: true }
       );
